@@ -6,9 +6,12 @@
   --color-accent: #f1c61c;
 
   --font-navigation: "Roboto Mono", monospace;
+  --font-body: "Noto Sans SC", sans-serif;
   --font-display: "Google Sans Flex", sans-serif;
 
   --font-size-navigation: 16px;
   --font-size-intro: 36px;
   --page-gutter: 1.25vw;
+  --page-gutter-left: 1.25vw;
+  --page-gutter-right: 1.09375vw;
 }
