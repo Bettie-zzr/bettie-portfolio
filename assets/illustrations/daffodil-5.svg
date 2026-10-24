@@ -1,0 +1,17 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="149.731" height="154.665" viewBox="0 0 149.731 154.665" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Daffodil5" filter="url(#filter0_g_0_13)">
+<path id="Vector 26" d="M79.0631 62.0748C75.0316 62.8132 70.667 68.3719 70.667 68.3719C70.667 68.3719 69.4192 71.2415 69.2676 73.9697C69.1037 76.9207 69.8893 77.4149 70.667 80.2663C71.314 82.6389 71.5454 82.9286 73.4657 84.4649C76.9641 87.2636 77.7712 86.326 81.8618 87.9628C85.3602 89.3626 86.0599 87.9628 89.5582 85.1645C91.9054 83.2871 90.9576 83.0655 91.6572 80.2663C92.7836 75.7599 93.805 72.4906 91.6572 68.3719C90.6705 66.4796 89.8716 65.4469 88.1589 64.1738C85.2331 61.9991 82.6489 61.418 79.0631 62.0748Z" stroke-width="9.79546" stroke="black"/>
+<path id="Vector 27" d="M61.5713 13.098L72.0664 9.59962L80.4625 13.098L82.5615 15.197L90.258 19.3951H97.2547L110.549 22.8935L120.344 30.5899V43.8837L131.539 52.9795L137.136 64.874V74.6694L128.04 88.663L131.539 103.356L128.04 117.35L114.747 122.947L102.852 129.944V136.941L90.258 144.637L75.5648 136.941L61.5713 133.442L41.9804 136.941L29.3862 133.442L23.7888 127.145V111.752V103.356V98.4584L20.9901 90.0623L13.9933 83.7652L11.8943 74.6694V62.775L23.7888 48.7814V36.887L29.3862 30.5899V19.3951L41.9804 15.197H48.9771L61.5713 13.098Z" stroke-width="10.4951" stroke="black"/>
+</g>
+<defs>
+<filter id="filter0_g_0_13" x="-4" y="-3.4962" width="157.731" height="161.929" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feTurbulence type="fractalNoise" baseFrequency="0.25 0.25" numOctaves="3" seed="3006" />
+<feDisplacementMap in="shape" scale="8" xChannelSelector="R" yChannelSelector="G" result="displacedImage" width="100%" height="100%" />
+<feMerge result="effect1_texture_0_13">
+<feMergeNode in="displacedImage"/>
+</feMerge>
+</filter>
+</defs>
+</svg>

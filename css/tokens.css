@@ -1,0 +1,14 @@
+:root {
+  color-scheme: light;
+  --color-page: #ffffff;
+  --color-paper: #f3efe9;
+  --color-ink: #000000;
+  --color-accent: #f1c61c;
+
+  --font-navigation: "Roboto Mono", monospace;
+  --font-display: "Google Sans Flex", sans-serif;
+
+  --font-size-navigation: 16px;
+  --font-size-intro: 36px;
+  --page-gutter: 1.25vw;
+}
