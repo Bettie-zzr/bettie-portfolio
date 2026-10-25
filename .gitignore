@@ -17,3 +17,7 @@ coverage/
 npm-debug.log*
 .vscode/
 .idea/
+
+# Private review drafts and local previews
+output/
+previews/

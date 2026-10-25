@@ -7,13 +7,14 @@
     <title>Projects — Bettie Zhao</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@18..144,600&family=Noto+Sans+SC:wght@400;500&family=Roboto+Mono:wght@500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@18..144,400;18..144,500;18..144,600;18..144,700&amp;family=Roboto+Mono:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/tokens.css?v=2">
-    <link rel="stylesheet" href="css/shared.css">
-    <link rel="stylesheet" href="css/project-list.css">
+    <link rel="stylesheet" href="css/shared.css?v=6">
+    <link rel="stylesheet" href="css/project-list.css?v=2">
+    <link rel="stylesheet" href="css/project-list-en.css?v=3">
   </head>
   <body>
-    <div class="project-page">
+    <div class="project-page project-page--en">
       <header class="site-header">
         <nav class="site-navigation" aria-label="Main navigation">
           <div class="brand">
@@ -22,9 +23,9 @@
           </div>
           <ul class="navigation-links">
             <li><a href="index.html">HOME</a></li>
-            <li><a href="project-list.html">PROJECT</a></li>
-            <li>RESUME</li>
-            <li>CONTACT</li>
+            <li><a href="project-list.html" aria-current="page">PROJECT</a></li>
+            <li><a href="assets/documents/Zherui-Zhao-Resume.pdf" target="_blank" rel="noopener">RESUME</a></li>
+            <li class="navigation-contact" hidden>CONTACT</li>
             <li class="language-label">En/中</li>
           </ul>
         </nav>
@@ -42,29 +43,41 @@
             <img class="project-mockup project-mockup--hmi" src="assets/projects/hmi-mockup.svg" alt="HMI robot maintenance system desktop interface">
           </div>
           <div class="project-copy project-copy--hmi">
-            <h1 id="hmi-title">机器人运维系统设计</h1>
-            <p>整合远程接管与任务管理能力，重新组织工业机器人运维界面的信息架构与操作流程。</p>
+            <h1 id="hmi-title">Robot Operations &amp; Maintenance</h1>
+            <p>Integrating remote control and task management into a clearer information architecture and workflow for industrial robot operations.</p>
             <div class="project-categories" aria-label="Project categories">
               <span>PRODUCT DESIGN </span><b>· </b><span>B2B </span><b>·</b><span> INTERNSHIP </span>
             </div>
-            <div class="project-view"><span>VIEW</span><img src="assets/illustrations/arrow-right.svg" alt=""></div>
+            <a class="project-view" href="internship-case.html"><span>VIEW</span><img src="assets/illustrations/arrow-right.svg" alt=""></a>
           </div>
         </section>
 
-        <section class="project-entry project-entry--wego" aria-labelledby="wego-title">
+        <section id="project-wego" class="project-entry project-entry--wego" aria-labelledby="wego-title">
           <div class="project-entry__heading project-entry__heading--wego">
             <span class="project-entry__number project-entry__number--padded">02</span>
-            <h2 class="project-entry__label" id="wego-title">Wego</h2>
+            <span class="project-entry__label">Wego</span>
+          </div>
+          <div class="project-copy project-copy--wego">
+            <h2 id="wego-title">Campus Events &amp; Social Connection</h2>
+            <p>Helping university students connect through shared interests and find companions to turn interest in campus events into meaningful participation.</p>
+            <div class="project-categories" aria-label="Project categories">UX/UI DESIGN · MOBILE APP</div>
+            <a class="project-view" href="wego-case.html"><span>VIEW</span><img src="assets/illustrations/arrow-right.svg" alt=""></a>
           </div>
           <div class="project-artwork project-artwork--wego">
             <img class="project-mockup project-mockup--wego" src="assets/projects/wego-mockup.svg" alt="Wego mobile app shown in a phone mockup">
           </div>
         </section>
 
-        <section class="project-entry project-entry--urt" aria-labelledby="urt-title">
+        <section id="project-urt" class="project-entry project-entry--urt" aria-labelledby="urt-title">
           <div class="project-entry__heading project-entry__heading--urt">
             <span class="project-entry__number">03</span>
-            <h2 class="project-entry__label" id="urt-title">URT Website</h2>
+            <span class="project-entry__label">URT Website</span>
+          </div>
+          <div class="project-copy project-copy--urt">
+            <h2 id="urt-title">A Digital Home for the Rover Team</h2>
+            <p>Designing and building a WordPress website to showcase the Unimelb Rover Team’s projects, present sponsorship information, and support ongoing content updates.</p>
+            <div class="project-categories" aria-label="Project categories">WEB DESIGN · WORDPRESS</div>
+            <a class="project-view" href="urt-case.html"><span>VIEW</span><img src="assets/illustrations/arrow-right.svg" alt=""></a>
           </div>
           <div class="project-artwork project-artwork--urt">
             <img class="project-mockup project-mockup--urt" src="assets/projects/urt-mockup.svg" alt="URT engineering team website shown in a desktop browser mockup">
@@ -75,5 +88,6 @@
       <span class="crop-mark crop-mark--bottom-left crop-mark--project-bottom-left"><img src="assets/decorations/crop-mark-top-left.svg" alt=""></span>
       <span class="crop-mark crop-mark--bottom-right crop-mark--project-bottom"><img src="assets/decorations/crop-mark-bottom-right.svg" alt=""></span>
     </div>
+    <script src="js/project-list-navigation.js?v=1" defer></script>
   </body>
 </html>

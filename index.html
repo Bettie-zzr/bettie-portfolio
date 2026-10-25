@@ -9,8 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@18..144,600&family=Noto+Sans+SC:wght@400;500&family=Roboto+Mono:wght@500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/tokens.css?v=2">
-    <link rel="stylesheet" href="css/shared.css">
-    <link rel="stylesheet" href="css/homepage.css?v=5">
+    <link rel="stylesheet" href="css/shared.css?v=6">
+    <link rel="stylesheet" href="css/homepage.css?v=7">
   </head>
   <body>
     <div class="portfolio-page">
@@ -21,10 +21,10 @@
             <span class="brand-swatch" aria-hidden="true"></span>
           </div>
           <ul class="navigation-links">
-            <li><a href="index.html">HOME</a></li>
+            <li><a href="index.html" aria-current="page">HOME</a></li>
             <li><a href="project-list.html">PROJECT</a></li>
-            <li>RESUME</li>
-            <li>CONTACT</li>
+            <li><a href="assets/documents/Zherui-Zhao-Resume.pdf" target="_blank" rel="noopener">RESUME</a></li>
+            <li class="navigation-contact" hidden>CONTACT</li>
             <li class="language-label">En/中</li>
           </ul>
         </nav>
@@ -35,7 +35,13 @@
       <main>
         <section class="hero-section" aria-label="Introduction">
           <div class="hero-grid" aria-hidden="true"></div>
-          <div class="hero-border" aria-hidden="true"><img src="assets/illustrations/hand-drawn-border.svg" alt=""></div>
+          <div class="hero-border" tabindex="0" role="img" aria-label="Remember, Daffodil is special">
+            <img class="hero-border__default" src="assets/illustrations/hand-drawn-border.svg" alt="">
+            <div class="hero-reveal" aria-hidden="true">
+              <img src="assets/illustrations/hover/hero.svg" alt="">
+              <p>Remember<br><span>Daffodil</span> is special</p>
+            </div>
+          </div>
           <div class="hero-copy">
             <h1>Hi, I’m Bettie</h1>
             <p>And I’m a<br>product designer.</p>
@@ -44,12 +50,36 @@
 
         <section class="daffodil-section" aria-label="Daffodil illustrations">
           <div class="flower-garden">
-            <img class="flower flower--9" src="assets/illustrations/daffodil-9.svg" alt="Daffodil">
+            <a class="flower flower--9 flower-link flower-link--hmi" href="project-list.html" aria-label="View HMI case study">
+              <img class="flower-link__default" src="assets/illustrations/daffodil-9.svg" alt="">
+              <span class="flower-reveal" aria-hidden="true">
+                <img class="flower-reveal__shape" src="assets/illustrations/hover/hmi.svg" alt="">
+                <span class="flower-reveal__number">01</span>
+                <span class="flower-reveal__title">HMI</span>
+                <span class="flower-reveal__view">View<img src="assets/illustrations/hover/arrow.svg" alt=""></span>
+              </span>
+            </a>
             <img class="flower flower--12" src="assets/illustrations/daffodil-12.svg" alt="Daffodil">
             <img class="flower flower--11" src="assets/illustrations/daffodil-11.svg" alt="Daffodil">
             <img class="flower flower--14" src="assets/illustrations/daffodil-14.svg" alt="Daffodil">
-            <img class="flower flower--10" src="assets/illustrations/daffodil-10.svg" alt="Daffodil">
-            <img class="flower flower--5" src="assets/illustrations/daffodil-5.svg" alt="Daffodil">
+            <a class="flower flower--10 flower-link flower-link--urt" href="project-list.html?project=urt#project-urt" aria-label="View URT Web case study">
+              <img class="flower-link__default" src="assets/illustrations/daffodil-10.svg" alt="">
+              <span class="flower-reveal" aria-hidden="true">
+                <img class="flower-reveal__shape" src="assets/illustrations/hover/urt.svg" alt="">
+                <span class="flower-reveal__number">03</span>
+                <span class="flower-reveal__title">URT Web</span>
+                <span class="flower-reveal__view">View<img src="assets/illustrations/hover/arrow.svg" alt=""></span>
+              </span>
+            </a>
+            <a class="flower flower--5 flower-link flower-link--wego" href="project-list.html?project=wego#project-wego" aria-label="View Wego case study">
+              <img class="flower-link__default" src="assets/illustrations/daffodil-5.svg" alt="">
+              <span class="flower-reveal" aria-hidden="true">
+                <img class="flower-reveal__shape" src="assets/illustrations/hover/wego.svg" alt="">
+                <span class="flower-reveal__number">02</span>
+                <span class="flower-reveal__title">Wego</span>
+                <span class="flower-reveal__view">View<img src="assets/illustrations/hover/arrow.svg" alt=""></span>
+              </span>
+            </a>
             <img class="flower flower--13" src="assets/illustrations/daffodil-13.svg" alt="Daffodil">
           </div>
         </section>

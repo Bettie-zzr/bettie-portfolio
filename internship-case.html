@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="zh-CN">
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,13 +7,15 @@
     <title>Internship Case — Bettie Zhao</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@18..144,600&family=Inter:wght@400;600;900&family=Noto+Sans+SC:wght@400;500;700&family=Roboto+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@18..144,400;18..144,500;18..144,600;18..144,700&amp;family=Roboto+Mono:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/tokens.css?v=2">
-    <link rel="stylesheet" href="css/shared.css">
+    <link rel="stylesheet" href="css/shared.css?v=6">
     <link rel="stylesheet" href="css/internship-case.css?v=2">
+    <link rel="stylesheet" href="css/wego-case.css?v=6">
+    <link rel="stylesheet" href="css/internship-case-en.css">
   </head>
   <body>
-    <div class="internship-case">
+    <div class="internship-case wego-case internship-case--en">
       <header class="site-header">
         <nav class="site-navigation" aria-label="Main navigation">
           <div class="brand">
@@ -22,9 +24,9 @@
           </div>
           <ul class="navigation-links">
             <li><a href="index.html">HOME</a></li>
-            <li><a href="project-list.html">PROJECT</a></li>
-            <li>RESUME</li>
-            <li>CONTACT</li>
+            <li><a href="project-list.html" aria-current="page">PROJECT</a></li>
+            <li><a href="assets/documents/Zherui-Zhao-Resume.pdf" target="_blank" rel="noopener">RESUME</a></li>
+            <li class="navigation-contact" hidden>CONTACT</li>
             <li class="language-label">En/中</li>
           </ul>
         </nav>
@@ -41,21 +43,21 @@
                 <p class="overview__company">SPIRIT-AI</p>
                 <p class="overview__product">MOZHMI O&amp;M</p>
               </div>
-              <p class="overview__summary">在工业机器人产品迭代过程中，团队计划面向宁德时代工厂的实际应用场景，将 MozLink 的远程接管能力整合至现有 MozHMI 系统，以支持设备监管、任务执行与现场维护。</p>
-              <p class="overview__context">这一迭代涉及原有系统的功能整合与交互调整，需要在既定产品架构下重新梳理信息组织与操作流程。</p>
+              <p class="overview__summary">As part of an industrial robotics product update for use in CATL factories, the team planned to integrate MozLink’s remote control capabilities into the existing MozHMI system to support equipment monitoring, task execution, and on-site maintenance.</p>
+              <p class="overview__context">The update required integrating existing functions and refining interactions, while reorganising information and workflows within the established product architecture.</p>
             </div>
             <dl class="overview__metadata">
             <div class="overview__meta overview__meta--role">
-              <dt>ROLE</dt><dd>产品设计师·UXUI设计师</dd>
+              <dt>ROLE</dt><dd>Product Designer · UX/UI Designer</dd>
             </div>
             <div class="overview__meta overview__meta--timeline">
               <dt>TIMELINE</dt><dd>2026.06-2026.08</dd>
             </div>
             <div class="overview__meta overview__meta--audience">
-              <dt>AUDIENCE</dt><dd>机器人遥操员·现场监管及维护人员</dd>
+              <dt>AUDIENCE</dt><dd>Robot Operators · On-site Monitoring and Maintenance Staff</dd>
             </div>
             <div class="overview__meta overview__meta--scope">
-              <dt>SCOPE</dt><dd>信息架构·交互流程·界面设计</dd>
+              <dt>SCOPE</dt><dd>Information Architecture · Interaction Flows · UI Design</dd>
             </div>
             <div class="overview__meta overview__meta--platform">
               <dt>PLATFORM</dt><dd><span>PC</span><span class="overview__platform-separator">·</span><span>PAD</span></dd>
@@ -71,30 +73,30 @@
 
         <section class="case-section case-challenge" aria-labelledby="challenge-title">
           <h2 class="case-section__title" id="challenge-title"><span>02</span> Design Challenge</h2>
-          <p class="challenge__intro">本次运维模块迭代需要整合既有远程接管能力、任务流程与设备运行信息。相关功能与信息分布于不同系统及版本中，其界面结构与交互逻辑存在差异，为新模块的设计带来了挑战。</p>
+          <p class="challenge__intro">The operations and maintenance update needed to bring together remote control capabilities, task workflows, and equipment status information. These functions were spread across different systems and versions, each with its own interface structure and interaction logic.</p>
           <div class="challenge__gallery">
             <figure class="challenge-card challenge-card--old">
               <div class="challenge-card__artwork challenge-card__artwork--grid">
-                <span class="challenge-card__image-clip challenge-card__image-clip--old"><img src="assets/case-study/challenge-mozlink-new.png" alt="MozLink 旧版远程遥操系统界面"></span>
+                <span class="challenge-card__image-clip challenge-card__image-clip--old"><img src="assets/case-study/challenge-mozlink-new.png" alt="Legacy MozLink remote control interface"></span>
               </div>
-              <figcaption><span>旧版MOZLINK</span><span>远程遥操系统</span></figcaption>
+              <figcaption><span>LEGACY MOZLINK</span><span>Remote Control System</span></figcaption>
             </figure>
             <figure class="challenge-card challenge-card--new">
               <div class="challenge-card__artwork challenge-card__artwork--grid">
-                <span class="challenge-card__image-clip challenge-card__image-clip--new"><img src="assets/case-study/challenge-mozlink-old.png" alt="MozLink 新版远程遥操系统界面"></span>
+                <span class="challenge-card__image-clip challenge-card__image-clip--new"><img src="assets/case-study/challenge-mozlink-old.png" alt="Updated MozLink remote control interface"></span>
               </div>
-              <figcaption><span>新版MOZLINK</span><span>远程遥操系统</span></figcaption>
+              <figcaption><span>UPDATED MOZLINK</span><span>Remote Control System</span></figcaption>
             </figure>
             <figure class="challenge-card challenge-card--hmi">
               <div class="challenge-card__artwork challenge-card__artwork--grid">
-                <span class="challenge-card__image-clip challenge-card__image-clip--hmi"><img src="assets/case-study/challenge-hmi-dashboard.png" alt="机器人 HMI 全流程平台界面"></span>
+                <span class="challenge-card__image-clip challenge-card__image-clip--hmi"><img src="assets/case-study/challenge-hmi-dashboard.png" alt="Robot HMI end-to-end workflow platform"></span>
               </div>
-              <figcaption><span>全流程平台</span><span>任务流程和节点管理</span></figcaption>
+              <figcaption><span>END-TO-END PLATFORM</span><span>Task Workflows and Node Management</span></figcaption>
             </figure>
           </div>
           <div class="challenge__statement">
             <p>THE DESIGN CHALLENGE</p>
-            <h3>如何将既有系统的操作能力与任务信息整合为清晰、一致的运维体验？</h3>
+            <h3>How might we bring existing system capabilities and task information together into a clear, consistent operations and maintenance experience?</h3>
           </div>
         </section>
 
@@ -105,24 +107,24 @@
 
         <section class="case-section case-approach" aria-labelledby="approach-title">
           <h2 class="case-section__title" id="approach-title"><span>03</span> Design Approach</h2>
-          <p class="approach__intro">在既定产品方向下，通过梳理系统分析、角色与功能关系，逐步明确运维模块的信息架构与交互逻辑。</p>
+          <p class="approach__intro">Within the established product direction, I analysed the systems and mapped the relationships between roles and functions to define the module’s information architecture and interaction logic.</p>
           <div class="approach__steps">
             <article class="approach-step approach-step--first">
-              <div class="approach-step__heading"><p class="approach-step__number">01</p><h3>理解与核实</h3></div>
-              <p class="approach-step__description">确认角色职责、系统功能与操作需求，明确设计边界</p>
+              <div class="approach-step__heading"><p class="approach-step__number">01</p><h3>Understand &amp; Validate</h3></div>
+              <p class="approach-step__description">Clarify roles, system functions, and operational needs to define the design scope.</p>
             </article>
             <article class="approach-step approach-step--active">
-              <div class="approach-step__heading"><p class="approach-step__number">02</p><h3>设计与组织</h3></div>
-              <p class="approach-step__description">建立信息分区、交互流程与不同状态下的界面表现。</p>
+              <div class="approach-step__heading"><p class="approach-step__number">02</p><h3>Design &amp; Organise</h3></div>
+              <p class="approach-step__description">Define information zones, interaction flows, and interface behaviour across different states.</p>
             </article>
             <article class="approach-step approach-step--last">
-              <div class="approach-step__heading"><p class="approach-step__number">03</p><h3>走查与迭代</h3></div>
-              <p class="approach-step__description">与产品和技术团队核对操作逻辑，并根据反馈持续调整。</p>
+              <div class="approach-step__heading"><p class="approach-step__number">03</p><h3>Review &amp; Iterate</h3></div>
+              <p class="approach-step__description">Review operational logic with product and engineering teams, and refine the design through feedback.</p>
             </article>
           </div>
           <div class="approach__iteration">
             <img src="assets/case-study/approach-iteration-icon.svg" alt="">
-            <p>根据产品和技术反馈持续迭代</p>
+            <p>Iterate through product and engineering feedback</p>
           </div>
         </section>
 
@@ -136,24 +138,24 @@
           <div class="decision__groups">
             <div class="decision-group decision-group--ia">
             <article class="decision-note decision-note--ia">
-              <div class="decision-note__heading"><p>01 Information Architecture</p><h3>整合功能，建立清晰的信息层级</h3></div>
-              <p class="decision-note__description">通过重新组织设备状态、任务信息与操作控制，建立明确的信息分区。</p>
+              <div class="decision-note__heading"><p>01 Information Architecture</p><h3>Integrating Functions into a Clear Information Hierarchy</h3></div>
+              <p class="decision-note__description">Create distinct information zones by reorganising equipment status, task information, and operational controls.</p>
             </article>
             <figure class="decision-screen decision-screen--exploration">
-              <img src="assets/case-study/decision-pad-exploration.svg" alt="运维近端 PAD 信息架构设计探索，包含操作步骤编号">
+              <img src="assets/case-study/decision-pad-exploration.svg" alt="Information architecture exploration for the local tablet interface, with numbered annotations">
             </figure>
             </div>
 
             <div class="decision-group decision-group--interaction">
             <article class="decision-note decision-note--interaction">
-              <div class="decision-note__heading"><p><span>02</span> Interaction Design</p><h3>区分任务操作与全局控制</h3></div>
+              <div class="decision-note__heading"><p><span>02</span> Interaction Design</p><h3>Separating Task Actions from Global Controls</h3></div>
             </article>
             <div class="decision__exploration-gallery">
               <figure class="decision-screen decision-screen--early-pc">
-                <img src="assets/case-study/decision-pc-early.svg" alt="PC 运维模块交互设计探索">
+                <img src="assets/case-study/decision-pc-early.svg" alt="Desktop operations and maintenance interaction exploration">
               </figure>
               <figure class="decision-screen decision-screen--early-pad">
-                <img src="assets/case-study/decision-pad-early.svg" alt="PAD 运维模块交互设计探索">
+                <img src="assets/case-study/decision-pad-early.svg" alt="Tablet operations and maintenance interaction exploration">
               </figure>
               <p class="decision__gallery-label decision__gallery-label--early">EARLY EXPLORATION</p>
               <p class="decision__gallery-label decision__gallery-label--final">FINAL DESIGN</p>
@@ -162,20 +164,20 @@
 
             <div class="decision-group decision-group--state">
             <article class="decision-note decision-note--state">
-              <div class="decision-note__heading"><p>03 STATE-BASED INTERACTION</p><h3>基于运行状态设计交互反馈</h3></div>
+              <div class="decision-note__heading"><p>03 STATE-BASED INTERACTION</p><h3>Designing Feedback around Operational States</h3></div>
             </article>
             <div class="decision__states">
               <figure class="decision-state decision-state--one">
                 <span class="decision-state__layers"><img src="assets/case-study/decision-final-01-node.svg" alt=""><img src="assets/case-study/decision-final-01-operations.svg" alt=""></span>
-                <figcaption>任务执行中</figcaption>
+                <figcaption>Task in Progress</figcaption>
               </figure>
               <figure class="decision-state decision-state--two">
                 <span class="decision-state__layers"><img src="assets/case-study/decision-final-02-node.svg" alt=""><img src="assets/case-study/decision-final-02-operations.svg" alt=""></span>
-                <figcaption>选择节点后</figcaption>
+                <figcaption>Node Selected</figcaption>
               </figure>
               <figure class="decision-state decision-state--three">
                 <span class="decision-state__layers"><img src="assets/case-study/decision-final-03-node.svg" alt=""><img src="assets/case-study/decision-final-03-operations.svg" alt=""></span>
-                <figcaption>开始运行</figcaption>
+                <figcaption>Start Execution</figcaption>
               </figure>
             </div>
             </div>
@@ -191,8 +193,8 @@
           <h2 class="case-section__title" id="solution-title"><span>05</span> Final Solution</h2>
           <div class="case-solution__content">
             <figure class="solution__desktop">
-              <img src="assets/case-study/solution-pc.svg" alt="PC 端主运维界面，展示完整任务执行状态">
-              <figcaption><span>PC / Main Operating Interface</span><span>PC端运维模块</span></figcaption>
+              <img src="assets/case-study/solution-pc.svg" alt="Main desktop operations interface showing task execution status">
+              <figcaption><span>PC / Main Operating Interface</span><span>Desktop Operations &amp; Maintenance</span></figcaption>
             </figure>
             <div class="solution__tablets">
             <figure class="solution-tablet">
@@ -200,14 +202,14 @@
                 <img class="solution-tablet__frame" src="assets/case-study/solution-pad-frame-01.svg" alt="">
                 <img class="solution-tablet__screen" src="assets/case-study/solution-pad-01.svg" alt="">
               </span>
-              <figcaption>任务执行状态</figcaption>
+              <figcaption>Task Execution State</figcaption>
             </figure>
             <figure class="solution-tablet">
               <span class="solution-tablet__device">
                 <img class="solution-tablet__frame" src="assets/case-study/solution-pad-frame-02.svg" alt="">
                 <img class="solution-tablet__screen" src="assets/case-study/solution-pad-02.svg" alt="">
               </span>
-              <figcaption>急停状态</figcaption>
+              <figcaption>Emergency Stop State</figcaption>
             </figure>
             </div>
           </div>
@@ -222,12 +224,12 @@
           <h2 class="case-section__title" id="reflection-title"><span>06</span> Reflection</h2>
           <div class="reflection__content">
             <div class="reflection__topic">
-              <p>What I lEARNED</p>
-              <h3>从界面设计到系统性思考</h3>
+              <p>WHAT I LEARNED</p>
+              <h3>From Interface Design to Systems Thinking</h3>
             </div>
             <div class="reflection__copy">
-              <p>这次实习让我意识到，复杂 B 端产品的设计不仅是界面优化，更需要理解系统功能、用户职责与操作流程之间的关系。</p>
-              <p>在需求持续调整、设计规范尚未完善的情况下，我需要主动与产品及技术团队核对功能逻辑，逐步明确设计边界，并将分散的信息组织为更清晰的交互结构。</p>
+              <p>This internship taught me that designing complex B2B products goes beyond improving interfaces. It requires understanding the relationships between system functions, user responsibilities, and operational workflows.</p>
+              <p>With evolving requirements and design standards still taking shape, I proactively reviewed functional logic with product and engineering teams, clarified the design scope, and organised fragmented information into a clearer interaction structure.</p>
             </div>
           </div>
           <a class="reflection__next" href="project-list.html#wego-title">

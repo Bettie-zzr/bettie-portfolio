@@ -1,0 +1,74 @@
+/* English-only adjustments; the Chinese page keeps the original stylesheet. */
+.internship-case--en .overview__context { font-family: var(--font-body); }
+.internship-case--en .challenge__statement { margin: 23.2px 0 0 21px; }
+.internship-case--en .challenge__statement h3,
+.internship-case--en .decision-note__heading h3 {
+  font-family: var(--font-body);
+  font-size: 22px;
+  font-weight: 500;
+}
+.internship-case--en .approach-step h3 {
+  font-family: var(--font-body);
+  font-size: 20px;
+  font-weight: 500;
+}
+.internship-case--en .decision-state figcaption,
+.internship-case--en .solution-tablet figcaption {
+  width: auto;
+  font-family: var(--font-navigation);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+}
+.internship-case--en .solution__desktop figcaption { width: auto; }
+.internship-case--en .solution__desktop figcaption span:last-child {
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.6;
+}
+.internship-case--en .challenge-card figcaption span:last-child { font-family: var(--font-body); }
+.internship-case--en .solution__desktop figcaption span:first-child { white-space: normal; }
+
+@media (max-width: 1200px) {
+  .internship-case--en .decision-group--ia { grid-template-columns: minmax(0, 1fr) minmax(0, 1.7fr); gap: 32px; }
+  .internship-case--en .solution__tablets { width: 100%; grid-template-columns: 539.323fr 540.71fr; gap: 32px; }
+  .internship-case--en .solution-tablet__device,
+  .internship-case--en .solution-tablet:nth-child(2) .solution-tablet__device {
+    width: 100%; height: auto; aspect-ratio: 539.323 / 344.057;
+  }
+  .internship-case--en .solution-tablet__screen { top: 2.72%; left: 1.74%; width: 96.59%; height: 94.76%; }
+  .internship-case--en .solution-tablet:nth-child(2) .solution-tablet__screen { top: 2.52%; left: 1.92%; }
+  .internship-case--en .decision-state__layers,
+  .internship-case--en .decision-state:nth-child(1) .decision-state__layers,
+  .internship-case--en .decision-state:nth-child(2) .decision-state__layers {
+    height: auto; aspect-ratio: 292.09 / 313;
+  }
+}
+
+@media (max-width: 900px) {
+  .internship-case--en .decision-group--ia { grid-template-columns: minmax(0, 1fr); }
+  .internship-case--en .decision-group--ia .decision-note { min-height: 0; }
+  .internship-case--en .decision-group--interaction .decision-note,
+  .internship-case--en .decision-group--state .decision-note { width: min(347px, 100%); }
+}
+
+@media (max-width: 600px) {
+  .internship-case--en .case-overview,
+  .internship-case--en .case-challenge,
+  .internship-case--en .case-approach,
+  .internship-case--en .case-decision,
+  .internship-case--en .case-solution { min-height: 0; }
+  .internship-case--en .overview__context { margin-top: 24px; }
+  .internship-case--en .challenge__intro,
+  .internship-case--en .approach__intro { margin-left: 0; }
+  .internship-case--en .challenge__gallery,
+  .internship-case--en .approach__steps { grid-template-columns: minmax(0, 1fr); gap: 32px; }
+  .internship-case--en .decision__exploration-gallery { grid-template-columns: minmax(0, 1fr); }
+  .internship-case--en .decision-screen--early-pc { grid-row: 1; }
+  .internship-case--en .decision__gallery-label--early { grid-row: 2; }
+  .internship-case--en .decision-screen--early-pad { grid-row: 3; }
+  .internship-case--en .decision__gallery-label--final { grid-row: 4; grid-column: 1; }
+  .internship-case--en .decision__states { grid-template-columns: minmax(0, 292.09px); justify-content: center; gap: 32px; }
+  .internship-case--en .decision-state:nth-child(n) { grid-column: 1; margin-top: 0; }
+  .internship-case--en .solution__tablets { grid-template-columns: minmax(0, 1fr); }
+}

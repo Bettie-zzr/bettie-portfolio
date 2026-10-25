@@ -1,7 +1,7 @@
 .portfolio-page {
   position: relative;
   width: 100%;
-  height: 1665px;
+  height: 1633px;
   overflow: hidden;
   background: var(--color-page);
 }
@@ -127,4 +127,52 @@
 .flower--13 {
   top: 465.48px;
   left: calc(50% - 49.5px);
+}
+
+/* Figma hover variants preserve the original artwork's size and placement. */
+.hero-copy { pointer-events: none; transition: opacity 160ms ease; }
+.hero-reveal,
+.flower-reveal { position: absolute; inset: 0; opacity: 0; transition: opacity 160ms ease; pointer-events: none; }
+.hero-border__default,
+.flower-link__default { transition: opacity 160ms ease; }
+.hero-reveal p {
+  position: absolute; top: 131px; left: 207px; transform: translateX(-50%);
+  margin: 0; white-space: nowrap; text-align: center;
+  color: white; font-family: var(--font-display); font-size: 36px;
+  font-weight: 600; line-height: 1.25;
+  font-variation-settings: "GRAD" 0, "ROND" 0, "wdth" 100;
+}
+.hero-reveal p span { color: #F1C61C; }
+.hero-border:is(:hover, :focus-visible) .hero-reveal,
+.flower-link:is(:hover, :focus-visible) .flower-reveal { opacity: 1; }
+.hero-border:is(:hover, :focus-visible) .hero-border__default,
+.hero-section:has(.hero-border:is(:hover, :focus-visible)) .hero-copy,
+.flower-link:is(:hover, :focus-visible) .flower-link__default { opacity: 0; }
+.hero-border:focus-visible,
+.flower-link:focus-visible { outline: 2px solid #F1C61C; outline-offset: 5px; }
+.flower-link { text-decoration: none; font-family: var(--font-navigation); }
+.flower-link--hmi { width: 156.727px; height: 148.331px; }
+.flower-link--wego { width: 149.731px; height: 153.929px; }
+.flower-link--urt { width: 165.123px; height: 138.536px; }
+.flower-reveal__shape { position: absolute; top: 0; left: 0; }
+.flower-link--wego .flower-reveal__shape { top: -0.5px; }
+.flower-reveal__number,
+.flower-reveal__title,
+.flower-reveal__view { position: absolute; white-space: nowrap; }
+.flower-reveal__number { color: #F1C61C; font-size: 16px; font-weight: 700; line-height: 11px; }
+.flower-reveal__title { color: white; font-size: 20px; font-weight: 600; line-height: 26px; }
+.flower-reveal__view { display: flex; align-items: center; gap: 6px; color: #F1C61C; font-size: 16px; font-weight: 700; line-height: 11px; }
+.flower-reveal__view img { display: block; }
+.flower-link--hmi .flower-reveal__number { top: 36px; left: 68px; }
+.flower-link--hmi .flower-reveal__title { top: 57px; left: 60px; }
+.flower-link--hmi .flower-reveal__view { top: 91px; left: 48px; height: 16px; }
+.flower-link--wego .flower-reveal__number { top: 33px; left: 65px; }
+.flower-link--wego .flower-reveal__title { top: 56px; left: 51px; }
+.flower-link--wego .flower-reveal__view { top: 98px; left: 47px; height: 16px; }
+.flower-link--urt .flower-reveal__number { top: 32px; left: 73px; }
+.flower-link--urt .flower-reveal__title { top: 56px; left: 41px; }
+.flower-link--urt .flower-reveal__view { top: 97px; left: 55px; height: 16px; }
+@media (prefers-reduced-motion: reduce) {
+  .hero-copy, .hero-reveal, .flower-reveal,
+  .hero-border__default, .flower-link__default { transition: none; }
 }

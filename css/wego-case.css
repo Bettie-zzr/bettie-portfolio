@@ -1,0 +1,206 @@
+.wego-case {
+  --font-body: "Google Sans Flex", sans-serif;
+}
+
+.wego-case .wego-copy,
+.wego-case .overview__summary,
+.wego-case .overview__meta dd,
+.wego-case .reflection__copy {
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.wego-case h1,
+.wego-case h2,
+.wego-case h3,
+.wego-case .overview__product,
+.wego-case .reflection__topic h3 {
+  font-family: var(--font-navigation);
+}
+
+.wego-case .challenge__statement h3,
+.wego-case .wego-cycle .decision-note__heading h3,
+.wego-case .wego-note .decision-note__heading h3,
+.wego-case .reflection__topic h3 {
+  font-family: var(--font-body);
+  font-weight: 500;
+}
+
+.wego-case .wego-copy { margin: 0; }
+.wego-case .wego-inner { width: min(1083px, 100%); margin-inline: auto; }
+.wego-case .wego-intro { margin-bottom: 35px; }
+
+.wego-case .wego-overview { min-height: 578px; }
+.wego-case .case-overview__grid {
+  grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
+  column-gap: clamp(40px, 6.7vw, 86px);
+}
+.wego-case .overview__narrative { padding-top: 52px; }
+.wego-case .overview__company { font-size: 16px; font-weight: 500; line-height: 24px; }
+.wego-case .overview__summary { max-width: 527px; }
+.wego-case .overview__metadata { max-width: 428px; gap: 24px; }
+.wego-case .overview__meta { gap: 8px; }
+.wego-case .overview__meta dt { line-height: 21px; font-weight: 400; }
+
+.wego-case .wego-challenge { min-height: 720px; }
+.wego-case .wego-statistics {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 36px 80px;
+  margin: 0 auto 36px;
+  width: min(1046px, 100%);
+}
+.wego-case .wego-statistic,
+.wego-case .wego-finding { border-top: 2px solid var(--color-muted); padding-top: 12px; }
+.wego-case .wego-statistic:nth-child(2) { border-color: var(--color-accent); }
+.wego-case .wego-statistic h3 { font-family: var(--font-navigation); font-size: 28px; font-weight: 500; margin: 8px 0 12px; }
+.wego-case .wego-label,
+.wego-case .wego-source,
+.wego-case .wego-methods {
+  font-family: var(--font-navigation);
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+}
+.wego-case .wego-label { font-weight: 600; color: var(--color-muted); }
+.wego-case .wego-statistic:nth-child(2) .wego-label { color: var(--color-accent); }
+.wego-case .wego-source { margin-top: 12px; color: var(--color-muted); }
+.wego-case .wego-source a { color: inherit; text-decoration: none; }
+.wego-case .wego-finding { grid-column: 1 / -1; }
+.wego-case .wego-finding .wego-label { margin-bottom: 12px; }
+.wego-case .challenge__statement { margin: 0; gap: 16px; }
+.wego-case .challenge__statement h3 { max-width: 1027px; font-size: 22px; font-weight: 500; }
+
+.wego-case .wego-approach { min-height: 604px; }
+.wego-case .wego-cycles {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 68px;
+}
+.wego-case .wego-cycle .decision-note__heading h3 { font-size: 20px; font-weight: 500; }
+.wego-case .wego-cycle .wego-copy { margin-top: 24px; color: var(--color-muted); }
+.wego-case .wego-methods { margin-top: 12px; }
+.wego-case .wego-cycle--active .decision-note__heading,
+.wego-case .wego-note--active .decision-note__heading { border-color: var(--color-accent); }
+
+.wego-case .wego-decision-list { display: flex; flex-direction: column; gap: 55px; margin-top: 54px; }
+.wego-case .wego-note .decision-note__heading { width: min(486px, 100%); }
+.wego-case .wego-note .decision-note__heading h3 { font-size: 22px; font-weight: 500; }
+.wego-case .wego-note .wego-copy { color: var(--color-muted); margin-top: 24px; max-width: 1024px; }
+.wego-case .wego-decision-group--trust .wego-copy { max-width: 437px; }
+
+.wego-case .reflection__topic p { font-size: 16px; }
+.wego-case .reflection__topic h3 { font-size: 22px; font-weight: 500; }
+
+
+.wego-case .wego-approach .wego-intro { margin-top: 44px; margin-bottom: 70px; }
+.wego-case .wego-cycle-diagram {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 149px;
+  height: 144px;
+  margin: 24px auto;
+  border: 2px solid var(--color-muted);
+  border-radius: 50%;
+  color: var(--color-muted);
+}
+.wego-case .wego-cycle-diagram::before,
+.wego-case .wego-cycle-diagram::after {
+  content: "";
+  position: absolute;
+  top: calc(50% - 6px);
+  border-inline: 6px solid transparent;
+}
+.wego-case .wego-cycle-diagram::before { left: -7px; border-top: 12px solid currentColor; }
+.wego-case .wego-cycle-diagram::after { right: -7px; border-bottom: 12px solid currentColor; }
+.wego-case .wego-cycle-diagram span {
+  font-family: var(--font-navigation);
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: var(--color-ink);
+}
+.wego-case .wego-cycle--active .wego-cycle-diagram { border-color: var(--color-accent); color: var(--color-accent); }
+.wego-case .wego-decision-group--trust {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 456px);
+  gap: 64px;
+  align-items: start;
+}
+.wego-case .wego-decision-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 456px));
+  justify-content: center;
+  gap: 59px;
+  margin-top: 33px;
+}
+.wego-case .wego-decision-artwork {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 100%;
+  aspect-ratio: 1;
+  margin: 0;
+  background: url("../assets/wego/decision-grid.png") center / 100% 100% no-repeat;
+}
+.wego-case .wego-decision-artwork img { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); display: block; height: 89.4737%; width: auto; max-width: 90%; object-fit: contain; }
+
+.wego-case .wego-showcase { min-height: 1106px; }
+.wego-case .wego-showcase-gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+  margin: 54px auto 0;
+  width: min(1052px, 100%);
+}
+.wego-case .wego-showcase-row {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: clamp(24px, 7.34375vw, 94px);
+}
+.wego-case .wego-showcase-phone { flex: 0 1 192px; min-width: 0; margin: 0; }
+.wego-case .wego-showcase-phone img { display: block; width: 100%; height: auto; }
+
+@media (min-width: 901px) and (max-width: 1200px) {
+  .wego-case .reflection__content {
+    grid-template-columns: minmax(0, 279fr) minmax(0, 595fr);
+    gap: 32px;
+  }
+}
+
+@media (max-width: 900px) {
+  .wego-case { --case-content-gutter: 28px; }
+  .wego-case .case-overview__grid { grid-template-columns: minmax(0, 1fr); gap: 36px; }
+  .wego-case .overview__narrative { padding: 0; }
+  .wego-case .overview__metadata { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); max-width: none; }
+  .wego-case .wego-statistics,
+  .wego-case .wego-cycles { column-gap: 32px; }
+  .wego-case .reflection__content { grid-template-columns: minmax(0, 1fr); gap: 24px; }
+  .wego-case .wego-decision-group--trust { grid-template-columns: minmax(0, 1fr); gap: 33px; }
+  .wego-case .wego-decision-group--trust .wego-decision-artwork { max-width: 456px; justify-self: center; }
+  .wego-case .wego-decision-gallery { gap: 32px; }
+  .wego-case .wego-showcase-row { flex-wrap: wrap; gap: 32px; }
+  .wego-case .wego-showcase-gallery { gap: 32px; }
+}
+
+@media (max-width: 600px) {
+  .wego-case { --case-content-gutter: 20px; }
+  .wego-case .case-section { padding-block: 40px; min-height: 0; }
+  .wego-case .wego-statistics,
+  .wego-case .wego-cycles,
+  .wego-case .overview__metadata { grid-template-columns: minmax(0, 1fr); }
+  .wego-case .wego-cycles { gap: 36px; }
+  .wego-case .wego-decision-gallery { grid-template-columns: minmax(0, 456px); }
+  .wego-case .wego-showcase-row { gap: 24px; }
+  .wego-case .wego-showcase-phone { flex-basis: calc((100% - 24px) / 2); max-width: 192px; }
+  .wego-case .case-section__title { font-size: 16px; }
+  .wego-case .reflection__next { margin-left: 0; }
+  .wego-case .site-header,
+  .wego-case .site-navigation { height: 112px; }
+  .wego-case .navigation-links { top: 64px; height: 24px; display: flex; justify-content: space-evenly; gap: 8px; padding-inline: 12px; font-size: 12px; }
+  .wego-case .navigation-links li { position: static; }
+}

@@ -1,0 +1,35 @@
+.project-page--en { --font-body: "Google Sans Flex", sans-serif; }
+.project-page--en .project-copy {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+.project-page--en .project-copy :is(h1, h2),
+.project-page--en .project-copy p,
+.project-page--en .project-copy .project-categories,
+.project-page--en .project-view { position: static; }
+.project-page--en .project-copy :is(h1, h2) {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.45;
+}
+.project-page--en .project-copy p {
+  width: 100%;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6;
+}
+.project-page--en .project-view { margin-left: 10px; }
+
+.project-page--en .project-copy--wego,
+.project-page--en .project-copy--urt { position: absolute; width: 338px; }
+.project-page--en .project-copy--wego { top: 35px; left: 61.04%; }
+.project-page--en .project-copy--urt { top: 110px; left: var(--project-heading-start); }
+.project-page--en .project-copy :is(h1, h2),
+.project-page--en .project-copy p { margin: 0; font-family: var(--font-body); }
+.project-page--en .project-copy p { color: #6b6560; }
+
+/* Frame the complete project artwork when arriving from the homepage. */
+.project-page--en #project-wego,
+.project-page--en #project-urt { scroll-margin-top: max(0px, calc((100vh - 432px) / 2)); }

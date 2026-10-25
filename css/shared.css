@@ -137,3 +137,64 @@ body {
   right: 0;
   transform: rotate(180deg);
 }
+
+/* Keep the final white strip consistent across all portfolio pages. */
+.internship-case > .case-page-end {
+  height: 16px;
+  overflow: visible;
+}
+
+.internship-case > .case-page-end .crop-mark,
+.portfolio-page > .crop-mark--bottom-left,
+.portfolio-page > .crop-mark--bottom-right,
+.project-page > .crop-mark--bottom-left,
+.project-page > .crop-mark--bottom-right {
+  top: auto;
+  bottom: 0;
+  height: 29.063px;
+  overflow: visible;
+}
+
+/* CONTACT is temporarily hidden; keep the remaining group aligned to Figma. */
+.navigation-links .navigation-contact { display: none; }
+.navigation-links li:nth-child(1) { left: 74.6875%; }
+.navigation-links li:nth-child(2) { left: 80.234375%; }
+.navigation-links li:nth-child(3) { left: 88.046875%; }
+.navigation-links li.language-label { left: 95%; }
+
+.navigation-links li { transition: color 180ms ease; }
+.navigation-links li:hover,
+.navigation-links a:focus-visible,
+.navigation-links a:active { color: #F1C61C; }
+
+/* Text links keep their colour and lead with a small arrow movement. */
+.project-view img,
+.reflection__next img {
+  transition: transform 220ms cubic-bezier(.2, .7, .3, 1);
+}
+.project-view:is(:hover, :focus-visible) img,
+.reflection__next:is(:hover, :focus-visible) img {
+  transform: translateX(5px);
+}
+.project-view:active img,
+.reflection__next:active img { transform: translateX(3px); }
+
+@media (prefers-reduced-motion: reduce) {
+  .navigation-links li,
+  .project-view img,
+  .reflection__next img { transition: none; }
+  .project-view:is(:hover, :focus-visible, :active) img,
+  .reflection__next:is(:hover, :focus-visible, :active) img { transform: none; }
+}
+
+.project-view > span,
+.reflection__next-title,
+.urt-back > span { display: inline-block; transition: transform 220ms ease; }
+.project-view:is(:hover, :focus-visible) > span,
+.reflection__next:is(:hover, :focus-visible) .reflection__next-title,
+.urt-back:is(:hover, :focus-visible) > span { transform: translateX(2px); }
+@media (prefers-reduced-motion: reduce) {
+  .project-view > span,
+  .reflection__next-title,
+  .urt-back > span { transition: none; transform: none !important; }
+}
