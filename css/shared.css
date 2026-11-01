@@ -14,8 +14,11 @@ body {
 }
 
 .site-header {
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
   z-index: 100;
   height: 69px;
   background: var(--color-page);
@@ -28,7 +31,7 @@ body {
   background: var(--color-page);
   font-size: var(--font-size-navigation);
   font-weight: 500;
-  line-height: normal;
+  line-height: 21px;
 }
 
 .brand,
@@ -211,7 +214,12 @@ a.brand-name:is(:hover, :focus-visible, :active) { color: var(--color-accent); }
 }
 
 /* Keep anchor destinations below the pinned navigation. */
-html { scroll-padding-top: 85px; }
+html { scroll-padding-top: 69px; }
+/* Reserve exactly the same space before and after scrolling: 24 + 21 + 24. */
+.portfolio-page,
+.project-page,
+.internship-case { padding-top: 69px; }
 @media (max-width: 600px) {
-  html:has(.wego-case) { scroll-padding-top: 128px; }
+  html:has(.wego-case) { scroll-padding-top: 112px; }
+  .wego-case { padding-top: 112px; }
 }
