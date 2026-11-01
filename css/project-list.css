@@ -218,3 +218,13 @@
 .crop-mark--project-bottom {
   right: 1px;
 }
+
+/* Keep the list navigation pinned independently of its fixed-height content panel. */
+.project-page { padding-top: 69px; }
+.project-page > .site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+}

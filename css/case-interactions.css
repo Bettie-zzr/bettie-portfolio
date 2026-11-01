@@ -1,0 +1,22 @@
+/* Lines and their numbers share one accent state; titles retain their ink colour. */
+.internship-case .case-section .case-accent-line {
+  border-top-color: var(--color-muted);
+  transition: border-color 180ms ease;
+}
+.internship-case .case-section .case-accent-number {
+  color: var(--color-muted);
+  transition: color 180ms ease;
+}
+.internship-case .case-section [data-case-hover].is-case-hover .case-accent-line,
+.internship-case .case-section [data-case-hover].case-accent-line.is-case-hover,
+.internship-case .case-section .is-case-reading .case-accent-line {
+  border-top-color: var(--color-accent);
+}
+.internship-case .case-section [data-case-hover].is-case-hover .case-accent-number,
+.internship-case .case-section .is-case-reading .case-accent-number {
+  color: var(--color-accent);
+}
+@media (prefers-reduced-motion: reduce) {
+  .internship-case .case-section .case-accent-line,
+  .internship-case .case-section .case-accent-number { transition: none; }
+}

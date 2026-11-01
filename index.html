@@ -7,17 +7,23 @@
     <title>Bettie Zhao — Product Designer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@18..144,600&family=Noto+Sans+SC:wght@400;500&family=Roboto+Mono:wght@500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@18..144,400;18..144,600;18..144,700&family=Noto+Sans+SC:wght@400;500&family=Roboto+Mono:wght@500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/tokens.css?v=2">
-    <link rel="stylesheet" href="css/shared.css?v=6">
-    <link rel="stylesheet" href="css/homepage.css?v=7">
+    <link rel="stylesheet" href="css/shared.css?v=8">
+    <link rel="stylesheet" href="css/homepage.css?v=17">
+    <script src="js/homepage-ink.js?v=6" defer></script>
+    <noscript><style>
+      .flower-link .ink-trigger { display: none; }
+      .flower-link .flower-reveal { opacity: 1; }
+      .flower-link .flower-reveal__view { visibility: visible; pointer-events: auto; }
+    </style></noscript>
   </head>
   <body>
     <div class="portfolio-page">
       <header class="site-header">
         <nav class="site-navigation" aria-label="Main navigation">
           <div class="brand">
-            <span class="brand-name">BETTIE ZHAO</span>
+            <a class="brand-name" href="#about">BETTIE ZHAO</a>
             <span class="brand-swatch" aria-hidden="true"></span>
           </div>
           <ul class="navigation-links">
@@ -35,56 +41,144 @@
       <main>
         <section class="hero-section" aria-label="Introduction">
           <div class="hero-grid" aria-hidden="true"></div>
-          <div class="hero-border" tabindex="0" role="img" aria-label="Remember, Daffodil is special">
+          <div class="hero-interaction">
+          <div class="hero-border" data-ink="hero" data-ink-source="assets/illustrations/ink/hero.svg" tabindex="0" role="button" aria-expanded="false" aria-label="Reveal the daffodil message">
+            <template class="ink-template"><svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="470.942" height="408.364" viewBox="0 0 470.942 408.364" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="Vector 35" filter="url(#filter0_g_0_4)">
+<path d="M149.537 73.0611L116.281 66.5826L92.0942 58.3764L65.7482 66.5826L50.6316 83.8587L30.3322 112.796L28.1727 144.757L38.5383 180.173L60.1334 201.336L50.6316 215.589L41.9936 238.048V270.872L60.1334 325.724L98.1408 335.226L124.487 346.887H174.156L202.661 370.642L255.353 380.143L310.637 364.163L328.344 342.568L335.687 314.926L401.336 309.311L419.476 297.65L442.798 254.892V215.589L431.137 193.994L419.476 166.352V157.714L431.137 123.594V98.9752L419.476 74.3568L370.239 58.3764H333.959H305.886L297.679 34.6218L264.423 28.1433H225.984L197.91 34.6218L181.066 40.2366L158.607 58.3764L153.856 66.5826L149.537 73.0611Z"/>
+<path d="M149.537 73.0611L116.281 66.5826L92.0942 58.3764L65.7482 66.5826L50.6316 83.8587L30.3322 112.796L28.1727 144.757L38.5383 180.173L60.1334 201.336L50.6316 215.589L41.9936 238.048V270.872L60.1334 325.724L98.1408 335.226L124.487 346.887H174.156L202.661 370.642L255.353 380.143L310.637 364.163L328.344 342.568L335.687 314.926L401.336 309.311L419.476 297.65L442.798 254.892V215.589L431.137 193.994L419.476 166.352V157.714L431.137 123.594V98.9752L419.476 74.3568L370.239 58.3764H333.959H305.886L297.679 34.6218L264.423 28.1433H225.984L197.91 34.6218L181.066 40.2366L158.607 58.3764L153.856 66.5826L149.537 73.0611Z" fill="#09090A"/>
+<path d="M149.537 73.0611L116.281 66.5826L92.0942 58.3764L65.7482 66.5826L50.6316 83.8587L30.3322 112.796L28.1727 144.757L38.5383 180.173L60.1334 201.336L50.6316 215.589L41.9936 238.048V270.872L60.1334 325.724L98.1408 335.226L124.487 346.887H174.156L202.661 370.642L255.353 380.143L310.637 364.163L328.344 342.568L335.687 314.926L401.336 309.311L419.476 297.65L442.798 254.892V215.589L431.137 193.994L419.476 166.352V157.714L431.137 123.594V98.9752L419.476 74.3568L370.239 58.3764H333.959H305.886L297.679 34.6218L264.423 28.1433H225.984L197.91 34.6218L181.066 40.2366L158.607 58.3764L153.856 66.5826L149.537 73.0611Z" stroke="black" stroke-width="6.04663"/>
+</g>
+<defs>
+<filter id="filter0_g_0_4" x="0" y="4.76837e-07" width="470.942" height="408.364" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feTurbulence type="fractalNoise" baseFrequency="0.25 0.25" numOctaves="3" seed="6007" />
+<feDisplacementMap in="shape" scale="50.240001678466797" xChannelSelector="R" yChannelSelector="G" result="displacedImage" width="100%" height="100%" />
+<feMerge result="effect1_texture_0_4">
+<feMergeNode in="displacedImage"/>
+</feMerge>
+</filter>
+</defs>
+</svg></template>
             <img class="hero-border__default" src="assets/illustrations/hand-drawn-border.svg" alt="">
             <div class="hero-reveal" aria-hidden="true">
               <img src="assets/illustrations/hover/hero.svg" alt="">
-              <p>Remember<br><span>Daffodil</span> is special</p>
+              <p class="hero-reveal__message">Remember<br>the <span>daffodil</span> is a sign.</p>
+              <p class="hero-reveal__follow">Follow it,<br>and see where it leads.</p>
             </div>
           </div>
           <div class="hero-copy">
             <h1>Hi, I’m Bettie</h1>
             <p>And I’m a<br>product designer.</p>
           </div>
+          </div>
         </section>
 
         <section class="daffodil-section" aria-label="Daffodil illustrations">
           <div class="flower-garden">
-            <a class="flower flower--9 flower-link flower-link--hmi" href="project-list.html" aria-label="View HMI case study">
+            <div class="flower flower--9 flower-link flower-link--hmi" data-ink="hmi" data-ink-source="assets/illustrations/ink/hmi.svg">
+            <template class="ink-template"><svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="160.324" height="148.331" viewBox="0 0 160.324 148.331" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Daffodil 9" filter="url(#filter0_g_0_6)">
+<path id="Vector 18" d="M65.1788 72.2869C64.9434 75.2833 68.5518 80.061 70.7758 82.0828C72.7977 83.9208 75.0407 84.8812 77.7731 84.8812C81.5985 84.8812 85.2047 85.0907 87.5681 82.0828C89.425 79.7194 92.3969 75.2257 91.7666 72.2869C90.4599 66.1946 83.8349 60.3529 77.7726 61.7922C75.1141 62.4234 69.3768 65.2899 69.3768 65.2899C69.3768 65.2899 65.4392 68.973 65.1788 72.2869Z" stroke-width="9.79546" stroke="black"/>
+<path id="Vector 19" d="M61.6695 12.5941H53.9731L49.0754 13.9935L44.8773 15.3928L40.6793 17.4919L37.8806 20.9902L33.6825 26.5876L30.1841 29.3863V37.7824L28.0851 45.4789L30.1841 49.6769L25.2864 64.3701L21.788 66.4691L14.7913 72.7662L12.6922 77.6639L14.7913 88.1591L17.59 92.3571L21.788 100.753V103.552L23.887 112.648L28.0851 122.443L40.6793 125.942H51.8741H57.4715L79.1614 133.638H94.5543L106.449 128.041V120.344L108.548 115.446H117.644L135.835 109.849L145.631 103.552V88.1591L143.532 84.6607V79.763V64.3701V58.7727V41.2808L127.439 34.2841L117.644 20.9902L100.152 13.9935H93.1549L83.3595 20.9902L77.7621 22.3896L72.8643 17.4919L68.6663 12.5941H61.6695Z" fill="#09090A" stroke-width="8.39611" stroke="black"/>
+</g>
+<defs>
+<filter id="filter0_g_0_6" x="-4.72315" y="-8.32" width="173.367" height="164.971" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feTurbulence type="fractalNoise" baseFrequency="0.25 0.25" numOctaves="3" seed="8888" />
+<feDisplacementMap in="shape" scale="16.639999389648438" xChannelSelector="R" yChannelSelector="G" result="displacedImage" width="100%" height="100%" />
+<feMerge result="effect1_texture_0_6">
+<feMergeNode in="displacedImage"/>
+</feMerge>
+</filter>
+</defs>
+</svg></template>
+              <button class="ink-trigger" type="button" aria-expanded="false" aria-label="Reveal HMI project"></button>
               <img class="flower-link__default" src="assets/illustrations/daffodil-9.svg" alt="">
-              <span class="flower-reveal" aria-hidden="true">
+              <span class="flower-reveal">
                 <img class="flower-reveal__shape" src="assets/illustrations/hover/hmi.svg" alt="">
                 <span class="flower-reveal__number">01</span>
                 <span class="flower-reveal__title">HMI</span>
-                <span class="flower-reveal__view">View<img src="assets/illustrations/hover/arrow.svg" alt=""></span>
+                <a class="flower-reveal__view" href="project-list.html" aria-label="View HMI case study">View<img src="assets/illustrations/hover/arrow.svg" alt=""></a>
               </span>
-            </a>
+            </div>
             <img class="flower flower--12" src="assets/illustrations/daffodil-12.svg" alt="Daffodil">
             <img class="flower flower--11" src="assets/illustrations/daffodil-11.svg" alt="Daffodil">
             <img class="flower flower--14" src="assets/illustrations/daffodil-14.svg" alt="Daffodil">
-            <a class="flower flower--10 flower-link flower-link--urt" href="project-list.html?project=urt#project-urt" aria-label="View URT Web case study">
+            <div class="flower flower--10 flower-link flower-link--urt" data-ink="urt" data-ink-source="assets/illustrations/ink/urt.svg">
+            <template class="ink-template"><svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="173.298" height="153.002" viewBox="0 0 173.298 153.002" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Daffodil 10" filter="url(#filter0_g_0_5)">
+<path id="Vector 24" d="M99.8045 70.203C98.5804 67.569 97.3092 66.2381 94.9068 64.6056C91.0055 61.9545 87.7094 62.0757 83.0123 62.507C79.91 62.7919 76.7152 63.2067 75.3159 64.6056C73.9165 66.0045 69.8424 75.0976 75.3157 82.0974C75.3157 82.0974 80.4803 87.9676 85.1112 89.0941C89.7574 90.2243 91.6802 91.9235 94.9068 88.3944C97.8568 85.1679 97.7222 84.1458 99.1047 79.9983C100.504 75.8003 101.647 74.1676 99.8045 70.203Z" stroke-width="6.99676" stroke="black"/>
+<path id="Vector 25" d="M79.5382 22.3872L68.3434 29.384L53.6502 25.1859H42.4554H36.1583L28.4619 29.384L22.1648 39.1794L25.6632 58.0707L22.1648 69.2655L15.8677 82.5593V93.7541L18.6664 106.348L31.2606 118.942L56.4489 121.741L70.4424 130.837L90.733 137.134H106.826L123.618 130.837L128.515 121.741L135.54 107.914L139.71 99.3515L153.004 93.7541L157.202 79.0609L153.004 66.4668L146.007 59.47L139.71 54.5723L136.912 46.8758V37.0804L126.416 32.8823L118.72 22.3872L109.624 16.0901L99.8288 17.4895H90.733L79.5382 22.3872Z" fill="#09090A" stroke-width="9.79546" stroke="black"/>
+</g>
+<defs>
+<filter id="filter0_g_0_5" x="-6.99679" y="-6.07477" width="187.063" height="160.476" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feTurbulence type="fractalNoise" baseFrequency="0.25 0.25" numOctaves="3" seed="190" />
+<feDisplacementMap in="shape" scale="21.940000534057617" xChannelSelector="R" yChannelSelector="G" result="displacedImage" width="100%" height="100%" />
+<feMerge result="effect1_texture_0_5">
+<feMergeNode in="displacedImage"/>
+</feMerge>
+</filter>
+</defs>
+</svg></template>
+              <button class="ink-trigger" type="button" aria-expanded="false" aria-label="Reveal URT Web project"></button>
               <img class="flower-link__default" src="assets/illustrations/daffodil-10.svg" alt="">
-              <span class="flower-reveal" aria-hidden="true">
+              <span class="flower-reveal">
                 <img class="flower-reveal__shape" src="assets/illustrations/hover/urt.svg" alt="">
                 <span class="flower-reveal__number">03</span>
                 <span class="flower-reveal__title">URT Web</span>
-                <span class="flower-reveal__view">View<img src="assets/illustrations/hover/arrow.svg" alt=""></span>
+                <a class="flower-reveal__view" href="project-list.html?project=urt#project-urt" aria-label="View URT Web case study">View<img src="assets/illustrations/hover/arrow.svg" alt=""></a>
               </span>
-            </a>
-            <a class="flower flower--5 flower-link flower-link--wego" href="project-list.html?project=wego#project-wego" aria-label="View Wego case study">
+            </div>
+            <div class="flower flower--5 flower-link flower-link--wego" data-ink="wego" data-ink-source="assets/illustrations/ink/wego.svg">
+            <template class="ink-template"><svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="157.677" height="168.605" viewBox="0 0 157.677 168.605" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Daffodil5" filter="url(#filter0_g_0_5)">
+<path id="Vector 26" d="M83.3863 69.0448C79.3548 69.7832 74.9902 75.3419 74.9902 75.3419C74.9902 75.3419 73.7425 78.2115 73.5909 80.9397C73.427 83.8907 74.2126 84.3849 74.9902 87.2363C75.6373 89.6089 75.8687 89.8986 77.789 91.4349C81.2873 94.2336 82.0945 93.296 86.185 94.9328C89.6834 96.3326 90.3831 94.9328 93.8815 92.1345C96.2287 90.2571 95.2808 90.0355 95.9805 87.2363C97.1069 82.7299 98.1283 79.4606 95.9805 75.3419C94.9937 73.4496 94.1949 72.4169 92.4821 71.1438C89.5564 68.9691 86.9722 68.388 83.3863 69.0448Z" stroke-width="9.79546" stroke="black"/>
+<path id="Vector 27" d="M76.3897 16.5696L65.8945 20.068L53.3004 22.167H46.3036L33.7095 26.3651V37.5599L28.1121 43.857V55.7515L16.2176 69.745V81.6394L18.3166 90.7352L25.3133 97.0323L28.1121 105.428V110.326V118.722V134.115L33.7095 140.412L46.3036 143.911L65.8945 140.412L79.888 143.911L94.5812 151.607L107.175 143.911V136.914L119.07 129.917L132.364 124.32L135.862 110.326L132.364 95.633L141.459 81.6394V71.844L135.862 59.9495L124.667 50.8537V37.5599L114.872 29.8635L101.578 26.3651H94.5812L86.8848 22.167L84.7858 20.068L76.3897 16.5696Z" fill="#09090A" stroke-width="10.4951" stroke="black"/>
+</g>
+<defs>
+<filter id="filter0_g_0_5" x="-6.64674" y="-3.4962" width="171.671" height="175.869" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feTurbulence type="fractalNoise" baseFrequency="0.25 0.25" numOctaves="3" seed="3006" />
+<feDisplacementMap in="shape" scale="21.940000534057617" xChannelSelector="R" yChannelSelector="G" result="displacedImage" width="100%" height="100%" />
+<feMerge result="effect1_texture_0_5">
+<feMergeNode in="displacedImage"/>
+</feMerge>
+</filter>
+</defs>
+</svg></template>
+              <button class="ink-trigger" type="button" aria-expanded="false" aria-label="Reveal Wego project"></button>
               <img class="flower-link__default" src="assets/illustrations/daffodil-5.svg" alt="">
-              <span class="flower-reveal" aria-hidden="true">
+              <span class="flower-reveal">
                 <img class="flower-reveal__shape" src="assets/illustrations/hover/wego.svg" alt="">
                 <span class="flower-reveal__number">02</span>
                 <span class="flower-reveal__title">Wego</span>
-                <span class="flower-reveal__view">View<img src="assets/illustrations/hover/arrow.svg" alt=""></span>
+                <a class="flower-reveal__view" href="project-list.html?project=wego#project-wego" aria-label="View Wego case study">View<img src="assets/illustrations/hover/arrow.svg" alt=""></a>
               </span>
-            </a>
+            </div>
             <img class="flower flower--13" src="assets/illustrations/daffodil-13.svg" alt="Daffodil">
           </div>
         </section>
         <span class="crop-mark crop-mark--divider-left"><img src="assets/decorations/crop-mark-bottom.svg" alt=""></span>
         <span class="crop-mark crop-mark--divider-right"><img src="assets/decorations/crop-mark-bottom.svg" alt=""></span>
+        <div class="about-divider" aria-hidden="true">
+          <span class="crop-mark about-divider__left"><img src="assets/decorations/crop-mark-bottom.svg" alt=""></span>
+          <span class="crop-mark about-divider__right"><img src="assets/decorations/crop-mark-bottom.svg" alt=""></span>
+        </div>
+        <section class="about-section" id="about" aria-labelledby="about-title" tabindex="-1">
+          <img class="about-portrait" src="assets/illustrations/about-bettie.png" alt="Bettie outdoors in Melbourne" width="414.846" height="352.22" loading="lazy">
+          <h2 id="about-title">A little more about me</h2>
+          <div class="about-copy">
+            <p>Currently studying UX Design in Melbourne.</p>
+            <p>Interested in people, interactions, and the little details of everyday life.</p>
+            <p>I design, draw, take photographs, and occasionally get lost in my own thoughts.</p>
+          </div>
+        </section>
       </main>
 
       <span class="crop-mark crop-mark--bottom-left"><img src="assets/decorations/crop-mark-bottom-right.svg" alt=""></span>
