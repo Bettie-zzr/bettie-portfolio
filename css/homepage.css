@@ -256,6 +256,7 @@
 }
 .hero-section:has(.is-ink-filled) .hero-copy { opacity: 0; visibility: hidden; }
 .hero-copy.is-ink-filling { transition: none; }
+.flower-reveal { z-index: 3; }
 .flower-reveal__view { text-decoration: none; }
 .flower-link .flower-reveal__view { visibility: hidden; z-index: 3; }
 .flower-link.is-ink-filled .flower-reveal__view {
@@ -288,3 +289,11 @@
 .about-divider .crop-mark { top: 0; height: 17px; }
 .about-divider__left { left: 0; }
 .about-divider__right { right: 0; }
+
+/* Match the small arrow response used by the other project links. */
+.flower-reveal__view img { transition: transform 220ms cubic-bezier(.2, .7, .3, 1); }
+.flower-reveal__view:is(:hover, :focus-visible) img { transform: translateX(5px); }
+.flower-reveal__view:active img { transform: translateX(3px); }
+@media (prefers-reduced-motion: reduce) {
+  .flower-reveal__view img { transition: none; transform: none; }
+}
